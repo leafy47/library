@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Fancy";
+    src: url(./fonts/Bilbo_Swash_Caps/BilboSwashCaps-Regular.ttf);
+}
+
+header {
+    background-color: rgb(202, 22, 22);
+    height: 200px;
+}
+
+header h1 {
+    padding: 30px;
+    text-align: center;
+    font-size: 80px;
+    font-family: "Fancy", 'Times New Roman', Times, serif;
+    color: whitesmoke
+}
+
+.bookadd {
+    height: 300px;
+    background-color: aqua;
+}
+
+.bookdisplay {
+    height: 900px;
+    background-color: aquamarine;
+    display: grid;
+    grid: 300px 300px 300px / 1fr 1fr 1fr 1fr;
+    padding: 60px;
+}
+
+.card {
+    background-color: rgb(158, 158, 218);
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+
+}
