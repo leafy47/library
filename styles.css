@@ -8,7 +8,7 @@
 }
 
 header {
-    background-color: rgb(202, 22, 22);
+    background-color: rgb(6, 53, 184);
     height: 200px;
 }
 
@@ -22,7 +22,7 @@ header h1 {
 
 .bookadd {
     height: 300px;
-    background-color: aqua;
+    background-color: rgb(106, 135, 241);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,18 +30,25 @@ header h1 {
 
 .bookdisplay {
     height: 900px;
-    background-color: aquamarine;
+    background-color: rgb(168, 164, 237);
     display: grid;
     grid: 300px 300px 300px / 1fr 1fr 1fr 1fr;
     padding: 60px;
 }
 
 .card {
-    background-color: rgb(158, 158, 218);
+    background-color: rgb(204, 204, 235);
     width: 80%;
     height: 80%;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     padding: 20px;
+    border-radius: 18px;
+    font-family: "Fancy", 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+label {
+    font-size: 22px;
 }
 
