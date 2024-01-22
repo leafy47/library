@@ -56,6 +56,25 @@ function Book(title, author, pageNum, read) {
     }
 }
 
+class myBook {
+    constructor(title) {
+        this.title = title;
+    }
+    constructor(author) {
+        this.author = author;
+    }
+    constructor(pageNum) {
+        this.pageNum = pageNum;
+    }
+    constructor(read) {
+        this.read = read;
+    }
+    info() {
+        return read ? `${this.title} by ${this.author}, ${this.pageNum} pages, already read` : `${this.title} by ${this.author}, ${this.pageNum} pages, not yet read`;
+    }
+}
+
+let fresh = new myBook("Fresh Prince", "Willy from Philly", "75", false);
 
 function addBookToLibrary() {
     myLibrary.push({
