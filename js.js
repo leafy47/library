@@ -46,29 +46,24 @@ function clickAdd(event) {
 
 
 
-function Book(title, author, pageNum, read) {
-    this.title = title;
-    this.author = author;
-    this.pageNum = pageNum;
-    this.read = read;
-    this.info = function() {
-        return read ? `${title} by ${author}, ${pageNum} pages, already read` : `${title} by ${author}, ${pageNum} pages, not yet read`;
-    }
-}
+// function Book(title, author, pageNum, read) {
+//     this.title = title;
+//     this.author = author;
+//     this.pageNum = pageNum;
+//     this.read = read;
+//     this.info = function() {
+//         return read ? `${title} by ${author}, ${pageNum} pages, already read` : `${title} by ${author}, ${pageNum} pages, not yet read`;
+//     }
+// }
 
 class myBook {
-    constructor(title) {
+    constructor(title, author, pageNum, read) {
         this.title = title;
-    }
-    constructor(author) {
         this.author = author;
-    }
-    constructor(pageNum) {
         this.pageNum = pageNum;
-    }
-    constructor(read) {
         this.read = read;
     }
+
     info() {
         return read ? `${this.title} by ${this.author}, ${this.pageNum} pages, already read` : `${this.title} by ${this.author}, ${this.pageNum} pages, not yet read`;
     }
